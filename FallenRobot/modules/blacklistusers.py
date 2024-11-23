@@ -52,7 +52,8 @@ def bl_user(update: Update, context: CallbackContext) -> str:
     log_message = (
         f"#BLACKLIST\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(target_user.id, html.escape(target_user.first_name))}"
+        f"<b>User:</b> {mention_html(target_user.id, html.escape(target_user.first_name))}\n"
+        f"<b>Message by @MBV_GBOT. Powered by @MBV_NETWORK"
     )
     if reason:
         log_message += f"\n<b>Reason:</b> {reason}"
